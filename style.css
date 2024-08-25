@@ -62,15 +62,14 @@ header{
     justify-content: space-between;
     /* align-content: center; */
 }
-.header-container ul, footer ul{
+.header-container ul{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
 }
-.header-container ul li a, footer ul li a, footer p{
+.header-container ul li a, footer ul li a{
     padding: 10px 15px;
     font-size: 16px;
     font-weight: 400;
@@ -232,6 +231,7 @@ main::before {
 }
 .main-group2{
     height: 130vh;
+    border:  1px solid;
 }
 
 .condition{
@@ -644,8 +644,8 @@ margin-bottom: 14px;
     align-items: center;
     position: relative;
     z-index: 1;
-    bottom: 27%;
-    
+    border: 1px solid;
+    top: -20%;
     background-color: var(--whitecolor);
 }
 .first-section{
@@ -831,6 +831,16 @@ footer p{
 footer nav ul li a{
     color: var(--whitecolor);
 }
+footer ul{
+    display: flex;
+}
 
-
-
+.footer-con{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+.footer-con p{
+    padding: 10px;
+}
