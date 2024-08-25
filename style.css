@@ -3,6 +3,7 @@
       --gray900:#132238;
     --whitecolor:#fffefe;
     --primary: #A53DFF;
+    --mainColor: #4040a3;
     --gray700: #424E60;
     --gray600: #556070;
     --gray500: #697484;
@@ -45,7 +46,7 @@ header{
     caret-color: transparent;
 }
 .logo{
-    background-color: #4040a3;
+    background-color: var(--mainColor);
     border-radius: 50%;
     
 }
@@ -78,7 +79,7 @@ header{
 }
 .header-container ul li a.active, .header-container ul li a:hover,
 footer ul li a.active, footer ul li a:hover{
-    background: #4040a3;
+    background: var(--mainColor);
     border-radius: 8px;
     color: #fff;
     letter-spacing: 1.5px;
@@ -155,7 +156,7 @@ main::before {
     line-height: 24px;
     font-weight: 600;
     color: var(--whitecolor);
-    background-color: #4040a3;
+    background-color: var(--mainColor);
 }
 .inactive-btn{
     width: fit-content;
@@ -167,9 +168,9 @@ main::before {
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
-    color: #4040a3;
+    color: var(--mainColor);
     background-color: transparent;
-    border: 1px solid #4040a3;
+    border: 1px solid var(--mainColor);
 }
 .active-btn i, .inactive-btn i{
     text-align: center;
@@ -269,14 +270,14 @@ main::before {
 }
 
 .social-icon a, .social-i a{
-    color: #4040a3;
+    color: var(--mainColor);
     padding: 5px;
     margin: 5px;
     font-size: 14px;
     text-align: center;
 }
 .social-icon a.active, .social-i a.active{
-    background-color: #4040a3;
+    background-color: var(--mainColor);
     color: var(--whitecolor);
     border-radius: 2px;
     font-size: 12px;
@@ -284,7 +285,7 @@ main::before {
 }
 .social-icon a.activeb{
     background-color: transparent;
-    border:0.6px solid #4040a3;
+    border:0.6px solid var(--mainColor);
     padding: 8px;
     font-size: 12px;
 }
@@ -342,7 +343,7 @@ main::before {
     width: fit-content;
     padding: 10px;
     font-size: 24px;
-    color: #4040a3;
+    color: var(--mainColor);
     background-color: rgba(237, 216, 255, 0.5);
     text-align: left;
     border-radius: 8px;
@@ -574,7 +575,7 @@ margin-bottom: 14px;
     align-content: flex-start;
 }
 .border-active{
-    border-left: 5px solid #4040a3;
+    border-left: 5px solid var(--mainColor);
 }
 .testimonial{
     background-color: var(--whitecolor);
@@ -696,11 +697,11 @@ padding-bottom: 20px;
 .address a{
     padding: 10px;
     border-radius: 6px;
-    color: #4040a3;
+    color: var(--mainColor);
     background-color: rgba(237, 216, 255, 0.5);
 }
 .address.active a, .research.active i{
-    background-color: #4040a3;
+    background-color: var(--mainColor);
     color: var(--whitecolor);
 }
 .social-i{
@@ -737,7 +738,7 @@ form{
     padding:18px;
      margin-bottom:8px;
 }
-/* .form-title h1::after{
+.form-title h1::after{
     content: '';
     width: 40px;
     height: 4px;
@@ -748,7 +749,7 @@ form{
     left: 50%;
    transform: translateX(-50%);
  
- } */
+ }
 input{
     color:inherit;
     width: 100%;
@@ -764,7 +765,7 @@ input{
 input:focus{
     background-color: transparent;
     outline:transparent;
-    border-bottom:2px solid #4040a3;
+    border-bottom:2px solid var(--mainColor);
 }
 input::placeholder{
     color:transparent;
@@ -784,6 +785,14 @@ label{
 .input-two input{
     width: 210px;
 }
+
+input:focus~label,input:not(:placeholder-shown)~label{
+    top:-3em;
+    color: var(--mainColor);
+    font-size:15px;
+}
+
+
 footer{
     width: 100%;
     height: 250px;
